@@ -1,0 +1,25 @@
+name: PlayerStats
+version: '1'
+main: com.bara.playerStats.PlayerStats
+api-version: '1.20'
+
+commands:
+  stats:
+    description: View player statistics
+    permission: playerstats.stats
+    permission-message: You do not have permission to use this command.
+  resetstats:
+    description: Reset all player statistics.
+    permission: playerstats.admin
+    permission-message: You do not have permission to use this command.
+
+permissions:
+  playerstats.stats:
+    description: Allows usage of the /stats command
+    default: true
+  playerstats.stats.others:
+    description: Allows usage of the /stats <playername> command
+    default: op
+  playerstats.admin:
+    description: Allows usage of the /resetstats command
+    default: op

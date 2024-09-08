@@ -1,0 +1,28 @@
+# || ----------------------------------------------------------------- ||
+# || Player Stats Plugin ||
+# || Please leave a positive rating if you like this plugin .. so I can update it
+# || ----------------------------------------------------------------- ||
+
+
+# table name is : player_start you dont have to create it , its auto create ..
+Using-MYSQL: false # if false all data will be register in data folder using the uuid of the player . .!
+MySQL: # example: 'jdbc:mysql://{host}:{port}/{database name}?useSSL=false&autoReconnect=true'
+  url: "jdbc:mysql://localhost:3306/your_database"
+  user: "your_user"
+  password: "your_password"
+
+
+# Command : /stats .
+# Command : /stats <playername>  .
+# Permissions : playerstats.stats & playerstats.stats.others .
+
+stats-command:
+  - ''
+  - '&f&b&l%player% Statistics'
+  - '&bKills&f: &f%kills%'
+  - '&bDeaths&f: &f%deaths%'
+  - '&bKDR&f: &f%kdr%'
+  - '&bKillstreak&f: &f%killstreak%'
+  - '&bTop Killstreak&f: &f%topkillstreak%'
+  - ''
+me: 'My'
